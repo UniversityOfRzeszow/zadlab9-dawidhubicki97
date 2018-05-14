@@ -18,22 +18,22 @@ public class slownik {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-     HashMap<String, String> tlumacz = new HashMap<>();
-        tlumacz.put("stadion", "stadium");
-        tlumacz.put("plecak", "backpack");
-        tlumacz.put("drwi", "doors");
-        tlumacz.put("szkoła", "school");
-        tlumacz.put("woda", "water");
-        tlumacz.put("ogień", "fire");
-        tlumacz.put("ziemia", "earth");
-        tlumacz.put("droga", "road");
-        tlumacz.put("statek", "ship");
-        tlumacz.put("samolot", "plane");
-        tlumacz.put("pies", "dog");
-        tlumacz.put("kot", "cat");
-        tlumacz.put("niedźwiedź", "bear");
-        tlumacz.put("małpa", "monkey");
-        tlumacz.put("ciasto","cake");
+     HashMap<String, String> slownik = new HashMap<>();
+        slownik.put("stadion", "stadium");
+        slownik.put("plecak", "backpack");
+        slownik.put("drwi", "doors");
+        slownik.put("szkoła", "school");
+        slownik.put("woda", "water");
+        slownik.put("ogień", "fire");
+        slownik.put("ziemia", "earth");
+        slownik.put("droga", "road");
+        slownik.put("statek", "ship");
+        slownik.put("samolot", "plane");
+        slownik.put("pies", "dog");
+        slownik.put("kot", "cat");
+        slownik.put("niedźwiedź", "bear");
+        slownik.put("małpa", "monkey");
+        slownik.put("ciasto","cake");
        
         
        System.out.println("Podaj słowo: ");
@@ -44,7 +44,7 @@ public class slownik {
        {
                System.out.println("Podaj slowo: ");
           wyraz=odczyt.nextLine();
-           System.out.println("Slowo: "+wyraz+" To po anigelsku:  "+tlumacz.get(wyraz));
+           System.out.println("Slowo: "+wyraz+" To po anigelsku:  "+slownik.get(wyraz));
        }
        while(!wyraz.equals(konczace));
     }
